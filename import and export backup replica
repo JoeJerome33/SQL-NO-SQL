@@ -1,0 +1,5 @@
+mongoimport --uri="mongodb://localhost:27017/studentDB" --collection=students --file="C:\path\students.json" --jsonArray
+
+mongoexport --uri="mongodb://localhost:27017/studentDB" --collection=students --out="C:\MongoBackup\students.json" --jsonArray
+
+mongoexport --uri="mongodb://localhost:27017/studentDB" --collection=students --type=csv --fields=rollNo,name,department,cgpa --out="C:\MongoBackup\students.csv"
